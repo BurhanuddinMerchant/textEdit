@@ -28,8 +28,8 @@ const createWindow = () => {
     name: "xterm-color",
     cols: 80,
     rows: 24,
-    // cwd: process.env.HOME,
-    cwd: "D:/Projects/vsc/electron/textEdit/textedit/data",
+    cwd: process.env.HOME,
+    // cwd: "D:/Projects/vsc/electron/textEdit/textedit/data",
     env: process.env,
   });
   ptyProcess.on("data", (data) => {
