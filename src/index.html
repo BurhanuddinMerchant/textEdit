@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <title>Hello World!</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../node_modules/xterm/css/xterm.css" />
+    <script src="../node_modules/xterm/lib/xterm.js"></script>
   </head>
   <body>
     <h1>Edit it</h1>
-
     <textarea
       id="text-area"
       onChange="handleChange"
@@ -16,7 +17,15 @@
     ></textarea>
     <label>Filename</label>
     <input type="text" id="filename" />
+    <select type="text" id="fileextenstion">
+      <option value="txt" selected="selected">.txt</option>
+      <option value="cpp">.cpp</option>
+      <option value="py">.py</option>
+      <option value="c">.c</option>
+      <option value="js">.js</option>
+    </select>
     <button id="save-button">Save</button>
+    <div id="terminal"></div>
     <script src="js/index.js"></script>
   </body>
 </html>
